@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+#header {
+    /*Blue banner, centered, bottom text italics or different font*/
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header p{
+    /*Change font style to italic*/
+    font-style: italic;
+}
+
+#main-content{
+    /*left align, change font, indent a tiny bit*/ 
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#quiz-section{
+    /*photo right align, light blue box with a bit of padding, white background for text box*/
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 20px;
+    padding: 20px;
+    border:1px solid lightgrey;
+    /*I'm color blind so bear with me on the colors lol*/
+    background-color: lightcyan;
+    align-items:center;
+}
+
+#quiz-section img{
+    grid-column: 2;
+    grid-row: 1/span 2;
+    width: 90px;
+    height: auto;
+    border: 3px solid blue;
+}
+
+#quiz-section h2{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top:0;
+}
+
+#quiz-section form{
+    grid-column:1;
+    grid-row:2;
+}
+
+#species-table th{
+    /*grey background on the table header*/
+   background-color: grey;
+   color: white;  
+   text-align: left;
+}
+
+#species-table th, #species-table td{
+    padding: 5px;
+}
+#species-table h2{ 
+    /*Get rid of gap between header and table*/
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#species-table{
+   /*Get rid of gap between header and table*/
+   margin: 0 auto 20px auto;
+   width: 100%;
+}
+
+#species-table table{
+    display: inline-table;
+    margin: 0;
+}
+
+#footer{
+    /*grey banner, text centered, on one line*/
+    text-align: center;
+    background-color: lightgrey;
+    padding: 12px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
